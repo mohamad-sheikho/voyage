@@ -1,0 +1,137 @@
+/* Header & logo */
+
+nav{
+    width: 99%;
+    margin: 0 auto;
+    top: 0px;
+    position: fixed;
+    background-color: rgba(252, 0, 0, 0.801);
+    border-radius: 20px;
+    justify-content: center;
+    border-width:1px;
+    border-style:solid;
+    border-color:rgba(240, 191, 128, 0.952);
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    border-bottom: 2px solid transparent;
+    padding: 25px 0px;
+    text-align: center;
+    
+}
+
+nav a:hover{
+    color:rgba(240, 191, 128, 0.952);
+    border-bottom: 2px solid rgba(240, 191, 128, 0.952);
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: rgba(252, 0, 0, 0.801);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: rgba(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.conteneur{
+    display:flex;
+}
+.image
+{
+    z-index: 99;
+    height: 50px;
+    width: auto;
+}
+
+.stuck 
+{
+    top: 10px;
+    left: 10px;
+
+    width: 50px;
+    display: flex;
+    border-radius: 10px;
+    position: fixed;
+}
+
+
+
+/* STYLE POUR LE FOOTER GENERAL */
+.footer-general{
+    display: flex;
+    flex-direction: column;  
+    background-color: rgba(252, 0, 0, 0.801); 
+}
+
+.horaires-info{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(252, 0, 0, 0.801);
+}
+
+.info-colone{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(252, 0, 0, 0.801);
+    color: white;
+    
+}
+
+
+.liste-rangement{
+    display: flex;
+    background-color:  rgba(252, 0, 0, 0.801);
+}
+
+.footer-general ul{
+    list-style-type: none;  
+}
+
+.bouton-inscription{
+background-color: rgba(240, 191, 128, 0.952);
+display: flex;
+justify-content: center ;
+}

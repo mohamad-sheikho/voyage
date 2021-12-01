@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+    <link rel="stylesheet" href="../css/voyages.css">
+    <link rel="stylesheet" href="../css/inscription.css">
+</head>
+
+<body>
+
+    <!-- HEADER-->
+
+    <header class="stuck">
+        <a href="../index.html" class="image"><img src="../image/logovoyage.png" height="80px"></a>
+
+        <nav>
+
+            <ul>
+                <li class="deroulant">
+                    <a>Amerique du Nord &ensp;</a>
+                    <ul class="sous">
+                        <li><a href="../voyage/voyage-1.html">Montréal</a></li>
+                        <li><a href="../voyage/voyage-2.html">Miami</a></li>
+                    </ul>
+                    <li><a href="../voyage/inscription.html">S'inscrire !</a></li>
+                </li>
+        </nav>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+
+        <div class="formstyle">
+            <h1>LET'S TRIP !</h1>
+
+            <form action="../voyages.html">
+
+                <fieldset class="fieldset">
+
+                    <div class="champs">
+                        <label for="name">Nom:</label>
+                        <input type="text" id="name" name="name"></input>
+                    </div>
+
+                    <div class="champs">
+                        <label for="name">Prénom:</label>
+                        <input type="text" id="name" name="name"></input>
+                    </div>
+
+                    <div class="champs">
+                        <label for="name">Date Aller:</label>
+                        <input id="date" type="date" value="2022-16-01">
+                    </div>
+
+                    <div class="champs">
+                        <label for="name">Date Retour:</label>
+                        <input id="date" type="date" value="2022-16-01">
+                    </div>
+
+                    <div class="champs">
+                        <label for="day">Ville de départ:</label>
+                        <select name="day" id="day">
+                            <option>--Veuillez choisir une ville de départ--</option>
+                            <option>Montréal</option>
+                            <option>Miami</option>
+                        </select>
+                    </div>
+
+                    <div class="champs">
+                        <label for="msg">Message :</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+
+                    <div class="champs">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </fieldset>
+
+            </form>
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer-general">
+        <div class="horaires-info">
+            <div class="info-colone">
+                <h1>Horaires :</h1>
+                <div class="liste-rangement">
+                    <ul>
+                        <li>Lundi : </li>
+                        <li>mardi: </li>
+                        <li>mercredi : </li>
+                        <li>jeudi : </li>
+                        <li>vendredi : </li>
+                        <li>samedi : </li>
+                        <li>dimanche : </li>
+                    </ul>
+
+                    <ul>
+                        <li>9h - 19h </li>
+                        <li>9h - 19h </li>
+                        <li>9h - 12h </li>
+                        <li>9h - 19h </li>
+                        <li>9h - 19h </li>
+                        <li> FERMER </li>
+                        <li> FERMER </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-colone">
+                <h1>Informations :</h1>
+                <div class="liste-rangement">
+                    <ul>
+                        <li>Mail</li>
+                        <li>Adresse</li>
+                        <li>Numéro : </li>
+                    </ul>
+
+                    <ul>
+                        <li>laplatetrip@laplateforme.io </li>
+                        <li>8 rue joliette Marseille </li>
+                        <li>09.51.04.84.80</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <form action="voyages/inscription.html" class="bouton-inscription">
+            <button type="submit">S'inscrire</button>
+        </form>
+    </footer>
+
+</body>
+
+</html>
